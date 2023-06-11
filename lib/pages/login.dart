@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:hack_blr/pages/Home.dart';
 import 'package:hack_blr/services/api.dart';
 import 'display.dart';
 
@@ -26,7 +25,7 @@ class _LoginPageState extends State<LoginPage> {
         // print('User is signed in!');
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) =>  Display()),
+          MaterialPageRoute(builder: (context) =>  Display(fundsAllocated: 80000, fundsLeft: 3000)),
         );
       }
     });
